@@ -79,7 +79,7 @@
 
 [report/html/](report/html/) 下有三份独立 HTML 报告，每系统一份：总体分数、分攻击类型拆解、逐种子下钻、生成的对抗问题，以及两侧各自的回答与评分。逐用例数据见 [data/experiment_140_cases.csv](data/experiment_140_cases.csv)。
 
-> 完整论述、系统截图与分攻击类型分析见仓库内 18 页技术报告（`中文信息处理期末报告.pdf`）。
+> 完整论述、系统截图与分攻击类型分析见仓库内 18 页技术报告（`report.pdf`）。另有 33 页的 `RAG检索优化.pdf`，梳理本评估刻意未改动的检索侧优化手段——查询改写、混合检索、多向量与图检索、重排序与分数校准。
 
 ## 技术栈
 
@@ -161,7 +161,8 @@ python -m src.main run --target ragflow --output report/json/results.json
 ├── report/html/                 # 三份独立 HTML 评估报告
 ├── docs/figures/                # 技术报告中的设计图
 ├── 系统手册.md                   # 接口说明与二次开发指南
-├── 中文信息处理期末报告.pdf        # 18 页技术报告
+├── report.pdf                   # 18 页技术报告
+├── RAG检索优化.pdf               # 33 页检索优化专题
 ├── pyproject.toml
 └── .env.example
 ```

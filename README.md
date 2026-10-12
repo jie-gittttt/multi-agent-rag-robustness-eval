@@ -110,7 +110,10 @@ questions, and each side's answer with its scores. Per-case data is in
 [data/experiment_140_cases.csv](data/experiment_140_cases.csv).
 
 > The full write-up, system screenshots and per-attack analysis are in the 18-page
-> technical report (`中文信息处理期末报告.pdf`), also in this repository.
+> technical report (`report.pdf`). A separate 33-page deck, `RAG检索优化.pdf`, surveys
+> the retrieval-side optimisation techniques this evaluation deliberately leaves
+> untouched — query rewriting, hybrid retrieval, multi-vector and graph retrieval,
+> reranking and score calibration. Both are in this repository.
 
 ## Tech Stack
 
@@ -195,7 +198,8 @@ LLM diagnosis for an existing results file).
 ├── report/html/                 # three standalone HTML evaluation reports
 ├── docs/figures/                # diagrams from the technical report
 ├── 系统手册.md                   # interface reference and extension guide
-├── 中文信息处理期末报告.pdf        # 18-page technical report
+├── report.pdf                   # 18-page technical report
+├── RAG检索优化.pdf               # 33-page deck: retrieval optimisation survey
 ├── pyproject.toml
 └── .env.example
 ```
